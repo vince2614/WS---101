@@ -1,0 +1,74 @@
+body {
+  background-image: url("backgroundd.png"); /*sets a picture as the background.*/
+  background-size: cover; /*ensures the background image covers the entire page.*/
+  background-repeat: no-repeat; /*prevents the background image from repeating.*/
+  font-family:
+    Arial, sans-serif; /*sets the font for the page to Arial, with a fallback to sans-serif.*/
+  padding: 20px; /*adds padding around the content of the page.*/
+}
+
+h1,
+h2,
+p {
+  color: #ffffff; /*sets the text color to white for headings and paragraphs.*/
+  text-align: center; /*centers the text horizontally on the page.*/
+}
+
+p {
+  margin-bottom: 20px; /*adds space below paragraphs to separate them from other elements.*/
+}
+
+.img-container {
+  display: flex; /*arranges all images in a line horizontally.*/
+  justify-content: center; /*centers all images in the middle of the page.*/
+  gap: 20px; /*adds space between each image to prevent them from touching each other.*/
+}
+
+.img-card {
+  position: relative; /*allows for absolute positioning of child elements, such as the name overlay.*/
+  display: inline-block; /*treats each image as a box that can sit next to others.*/
+  overflow: hidden; /*hides any part of the image that extends beyond its container, which is useful for the hover effect.*/
+}
+
+.img-card img {
+  width: 180px; /*sets the width of each image to 180 pixels.*/
+  height: 270px; /*sets the height of each image to 270 pixels, maintaining a consistent aspect ratio.*/
+  border: 1px solid #ffffff; /*adds a white border around each image to make them stand out against the background.*/
+  transition:
+    transform 0.3s ease,
+    /*smoothly animates the scaling of the image when hovered over.*/ box-shadow
+      0.3s ease; /*smoothly animates the addition of a shadow when the image is hovered over.*/
+}
+
+.img-card:hover img {
+  transform: scale(
+    1.1
+  ); /*scales the image up by 10% when hovered over, creating a zoom effect.*/
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.747); /*adds a glowing white shadow around the image when hovered over to enhance the visual effect.*/
+}
+
+.img-card .name {
+  position: absolute; /*positions the name overlay relative to the .img-card container.*/
+  bottom: 0; /*aligns the name overlay to the bottom of the image card.*/
+  left: 0; /*aligns the name overlay to the left edge of the image card.*/
+  width: 100%; /*makes the name overlay span the entire width of the image card.*/
+  text-align: center; /*centers the text within the name overlay.*/
+  color: white; /*sets the text color of the name overlay to white for better visibility against the background.*/
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /*adds a semi-transparent black background to the name overlay to improve readability of the text.*/
+  padding: 10px 0; /*adds vertical padding to the name overlay for better spacing around the text.*/
+  transform: translateY(
+    100%
+  ); /*initially positions the name overlay below the image, making it hidden until hovered over.*/
+  transition: transform 0.3s ease; /*smoothly animates the movement of the name overlay when hovered over.*/
+}
+
+.img-card:hover .name {
+  transform: translateY(
+    0
+  ); /*moves the name overlay up to its original position when the image card is hovered over, making it visible.*/
+}
