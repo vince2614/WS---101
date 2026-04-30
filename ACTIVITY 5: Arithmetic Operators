@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operators</title>
+</head>
+
+<body>
+    <?php
+    $a = 26;
+    $b = 14;
+
+    echo "Addition: " . ($a + $b) . "<br>";
+    echo "Subtraction: " . ($a - $b) . "<br>";
+    echo "Multiplication: " . ($a * $b) . "<br>";
+    echo "Division: " . ($a / $b);
+    ?>
+
+</body>
+
+</html>
