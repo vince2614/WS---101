@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Output</title>
+</head>
+<body>
+    <?php
+        echo "Name: Joshua C. Obis  <br>";
+        echo "Course: BSIT-1A";
+    ?>
+
+    <h5>Guide Questions:</h5>
+    <p>1. What symbol is used to end a PHP statement?</p>
+    <p>ANSWER: Semicolon (;)</p><br>
+
+    <p>2. Which is faster: echo or print?</p>
+    <p>ANSWER: echo is faster than print.</p>
+
+</body>
+</html>
