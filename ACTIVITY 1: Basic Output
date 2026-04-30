@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        echo "Name: Joshua C. Obis  <br>";
+        echo "Name: John Vincent A. Mazo <br>";
         echo "Course: BSIT-1A";
     ?>
 
